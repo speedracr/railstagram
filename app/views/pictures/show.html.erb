@@ -6,13 +6,13 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @picture.image %>
+  <strong>Image:</strong> <br>
+  <img src="<%= @picture.image %>" width="200px">
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @picture.user_id %>
+  <%= @picture.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |

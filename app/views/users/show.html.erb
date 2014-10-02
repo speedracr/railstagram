@@ -1,0 +1,9 @@
+<h1>User: <%= @user.email %></h1>
+
+<% @user.pictures.each do |picture| %>
+<table>
+  <tr>
+    <td><img src="<%= picture.image %>" alt="" width="200px"></td>
+  </tr>
+</table>
+<% end %>
