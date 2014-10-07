@@ -1,8 +1,58 @@
-@import 'variables';
+@import "variables";
 
 $body-bg:                       $white;
+$navbar-default-bg:             $instagram;
+$navbar-default-brand-color:    white;
+$navbar-default-link-color:     white;
 $brand-primary:                 $brand;
-$navbar-default-bg:             $base;
-$navbar-default-brand-color:    $brand;
 
-@import 'bootstrap';
+.navbar-wrapper {
+  width:                  90%;
+  margin:                 0 auto;
+  text-shadow:   0 1px 3px rgba(0,0,0,0.8);
+}
+
+.navbar-home {
+  float:                  left;
+  padding:                10px 14px;
+  font-size:              1.5em;
+  color:                  white;
+  border-left:            1px solid #5786aa;
+  border-left-color:      rgba(255,255,255,0.1);
+}
+
+.navbar-login {
+  float:                  left;
+  width:                  90px;
+  padding:                10px 14px;  
+  font-size:              1.5em;
+  color:                  white;
+  border-right:           1px solid #06365f;
+  border-right-color:     rgba(0,0,0,0.1);  
+}
+
+.navbar-login .title {
+    position:             absolute;
+    font-size:            16px;
+    padding-left:         5px;
+    top:                  12px; 
+}
+
+.navbar-brand {
+  float: none;
+  font-family:  'Satisfy';
+  font-size:     26px!important;
+}
+
+.navbar-center {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: auto;
+  height:100%;
+}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
